@@ -1,0 +1,10 @@
+{
+  "prettier.printWidth": 220,
+  "prettier.requireConfig": true,
+  "[typescriptreact]": {
+    "editor.wordWrap": "off"
+  },
+  "[javascriptreact]": {
+    "editor.wordWrap": "off"
+  }
+}
