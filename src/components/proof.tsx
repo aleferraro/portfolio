@@ -25,7 +25,7 @@ const proofMetrics = [
   },
 ];
 
-const deliveryAreas = ["Laravel ecosystems", "Architetture headless & GraphQL", "Nuxt / React front-end", "Integrazioni API e processi core"];
+const deliveryAreas = ["Ecosistema Laravel", "Architetture headless & GraphQL", "Front-end Nuxt / React", "Integrazioni API e processi core"];
 
 export default function Proof() {
   return (
@@ -34,8 +34,8 @@ export default function Proof() {
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-2xl border border-card-border bg-card/70 p-6 md:p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.25em] text-accent mb-2">Proof of Work</p>
-              <h2 className="text-2xl md:text-3xl font-semibold leading-tight">Segnali concreti di impatto su prodotti reali, non solo elenco di tecnologie.</h2>
+              <p className="text-xs uppercase tracking-[0.25em] text-accent mb-2">In numeri</p>
+              <h2 className="text-2xl md:text-3xl font-semibold leading-tight">Segnali concreti di impatto su prodotti reali, non solo un elenco di tecnologie.</h2>
             </div>
             <div className="flex flex-wrap gap-2">
               {deliveryAreas.map((area) => (

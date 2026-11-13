@@ -35,7 +35,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+        <button className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Chiudi menu" : "Apri menu"}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>

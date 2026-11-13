@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { Award, GraduationCap, Languages } from "lucide-react";
 import Section from "./section";
 
-const educationIntro =
-  "Ho mantenuto solo la formazione e le certificazioni che rafforzano il profilo tecnico attuale, evitando elementi troppo distanti dal focus del portfolio.";
-
 const education = [
   {
     title: "Full Stack Web Developer",
@@ -16,7 +13,7 @@ const education = [
   },
   {
     title: "Laurea Triennale in Amministrazione, Finanza e Controllo",
-    institution: "Universita degli Studi di Torino",
+    institution: "UniversitÃ  degli Studi di Torino",
     period: "2011 - 2016",
     description: "Percorso universitario che ha rafforzato approccio analitico, organizzazione e lettura dei processi.",
   },
@@ -50,10 +47,6 @@ const languages = [
 export default function Education() {
   return (
     <Section id="education" title="Formazione e Certificazioni">
-      <div className="max-w-3xl mb-10 text-muted leading-relaxed">
-        <p>{educationIntro}</p>
-      </div>
-
       <div className="grid md:grid-cols-2 gap-12">
         {/* Education */}
         <div>

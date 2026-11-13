@@ -5,10 +5,10 @@ import { MapPin } from "lucide-react";
 import Section from "./section";
 
 const contactLead =
-  "Valuto opportunita come senior developer e collaborazioni mirate su prodotti web, piattaforme editoriali e applicazioni gestionali.";
+  "Valuto opportunitÃ  come senior developer e collaborazioni mirate su prodotti web, piattaforme editoriali e applicazioni gestionali.";
 
 const contactDetails =
-  "Se stai cercando un profilo capace di contribuire tra architettura, delivery e qualita del prodotto, contattami su LinkedIn.";
+  "Se stai cercando un profilo capace di contribuire tra architettura, delivery e qualitÃ  del prodotto, contattami su LinkedIn.";
 
 function LinkedinIcon({ size = 18 }: { size?: number }) {
   return (
@@ -48,7 +48,7 @@ export default function Contact() {
 
         <p className="flex items-center justify-center gap-2 text-sm text-muted">
           <MapPin size={14} />
-          Torino, Italia · Disponibile da remoto o in modalita ibrida
+          Torino, Italia · Disponibile da remoto o in modalitÃ  ibrida
         </p>
       </motion.div>
     </Section>

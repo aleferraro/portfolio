@@ -2,7 +2,7 @@
 
 Portfolio personale di Alessandro Ferraro, Senior Full Stack Developer.
 
-Il sito e sviluppato con Next.js App Router, React, TypeScript, Tailwind CSS e Framer Motion.
+Il sito Ã¨ sviluppato con Next.js App Router, React, TypeScript, Tailwind CSS e Framer Motion.
 
 ## Avvio locale
 
@@ -28,7 +28,7 @@ Apri http://localhost:3000 per visualizzare il sito.
 
 ## Obiettivo del sito
 
-Il portfolio e pensato per presentare:
+Il portfolio Ã¨ pensato per presentare:
 
 - posizionamento come Senior Full Stack Developer;
 - esperienza su prodotti editoriali, gestionali e piattaforme web;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 const heroDescription =
-  "Aiuto team di prodotto e aziende a progettare, sviluppare e far crescere applicazioni web con Laravel, Vue/React, Nuxt e TypeScript, con attenzione ad architettura, performance e qualita della delivery. Oggi sviluppo le piattaforme editoriali di EDT S.r.l. (Lonely Planet Italia, Il Giornale della Musica).";
+  "Aiuto team di prodotto e aziende a progettare, sviluppare e far crescere applicazioni web con Laravel, Vue/React, Nuxt e TypeScript, con attenzione ad architettura, performance e qualitÃ  della delivery. Oggi sviluppo le piattaforme editoriali di EDT S.r.l. (Lonely Planet Italia, Il Giornale della Musica).";
 
 function LinkedinIcon({ size = 20 }: { size?: number }) {
   return (
@@ -33,7 +33,7 @@ export default function Hero() {
 
       <div className="relative max-w-4xl mx-auto text-center">
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-accent font-mono text-sm mb-4">
-          Senior Full Stack Developer · Torino / Remote
+          Senior Full Stack Developer · Torino / Da remoto
         </motion.p>
 
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
@@ -98,7 +98,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
           className="absolute -bottom-20 left-1/2 -translate-x-1/2 text-muted hover:text-accent transition-colors"
-          aria-label="Scroll down"
+          aria-label="Scorri in basso"
         >
           <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
             <ArrowDown size={24} />

@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 import Section from "./section";
 
 const projectsIntro =
-  "Una selezione di prodotti in produzione e progetti personali. Ho privilegiato casi che mostrano il mio contributo tecnico piu che una semplice vetrina di stack.";
+  "Una selezione di prodotti in produzione e progetti personali. Ho privilegiato casi che mostrano il mio contributo tecnico piÃ¹ che una semplice vetrina di stack.";
 
 const projects = [
   {
@@ -15,7 +15,7 @@ const projects = [
     image: "/projects/lonely-planet-cover.jpg",
     summary: "Piattaforma editoriale dedicata al mondo dei viaggi con contenuti, approfondimenti e shop collegato al brand Lonely Planet Italia.",
     tech: ["Laravel", "GraphQL", "Nuxt", "Vue.js", "TypeScript", "PostgreSQL", "Redis"],
-    surface: "Travel editorial + shop",
+    surface: "Editoria di viaggio + shop",
     link: "https://www.lonelyplanetitalia.it",
     status: "Gen 2025 - Presente · In evoluzione",
     company: "EDT Srl",
@@ -32,7 +32,7 @@ const projects = [
     image: "/projects/giornale-musica-cover.jpg",
     summary: "Piattaforma editoriale per notizie, approfondimenti e appuntamenti del mondo musicale, con back office strutturato per la redazione.",
     tech: ["Laravel", "Filament", "Vue.js", "React", "TypeScript", "MySQL", "PHP"],
-    surface: "Editorial workflow platform",
+    surface: "Piattaforma per il lavoro redazionale",
     link: "https://www.giornaledellamusica.it",
     status: "Gen 2025 - Presente",
     company: "EDT Srl",
@@ -49,7 +49,7 @@ const projects = [
     image: "/projects/primoup-cover.jpg",
     summary: "Gestionale proprietario per la gestione operativa di cliniche dentistiche, con processi amministrativi, pazienti, magazzino e integrazioni esterne.",
     tech: ["Laravel", "Vue.js", "Elasticsearch", "MySQL", "PHP", "JavaScript"],
-    surface: "Operational healthcare management",
+    surface: "Gestionale sanitario operativo",
     link: "https://www.centridentisticiprimo.it",
     status: "Apr 2021 - Dic 2024",
     company: "Primo Group S.p.A.",
@@ -57,7 +57,7 @@ const projects = [
     contribution: [
       "Ricerca avanzata e performante con Elasticsearch.",
       "Integrazione con il Sistema Tessera Sanitaria e i portali assicurativi (UniSalute, Previmedical).",
-      "Moduli core: magazzino, contabilita, pazienti, fatture e compensi dei medici.",
+      "Moduli core: magazzino, contabilitÃ , pazienti, fatture e compensi dei medici.",
     ],
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     image: "/projects/binance-bot-cover.png",
     summary: "Bot di trading algoritmico per Binance in Python: scanner di mercato, strategie momentum e funding-carry delta-neutral, dashboard web e motore di backtest con validazione statistica.",
     tech: ["Python", "FastAPI", "pandas", "Binance API", "Pytest"],
-    surface: "Algorithmic trading + backtesting",
+    surface: "Trading algoritmico + backtest",
     link: "https://github.com/aleferraro/binance-bot",
     status: "Progetto personale · Open source (MIT)",
     company: "Progetto personale",
@@ -101,7 +101,7 @@ export default function Projects() {
             </div>
 
             <div className="mb-4 rounded-xl border border-card-border bg-linear-to-br from-accent/20 via-accent/5 to-transparent p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-2">Product Surface</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-2">Tipo di prodotto</p>
               <p className="text-sm text-foreground">{project.surface}</p>
             </div>
 
