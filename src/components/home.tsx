@@ -7,13 +7,14 @@ import Skills from "@/components/skills";
 import Education from "@/components/education";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import MotionProvider from "@/components/motion-provider";
 import { getDictionary, type Locale } from "@/i18n";
 
 export default function Home({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
 
   return (
-    <>
+    <MotionProvider>
       <Navbar locale={locale} links={dict.nav} a11y={dict.a11y} />
       <main id="main-content">
         <Hero t={dict.hero} scrollDownLabel={dict.a11y.scrollDown} />
@@ -25,6 +26,6 @@ export default function Home({ locale }: { locale: Locale }) {
         <Contact t={dict.contact} />
       </main>
       <Footer t={dict.footer} />
-    </>
+    </MotionProvider>
   );
 }
