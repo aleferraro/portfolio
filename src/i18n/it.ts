@@ -224,6 +224,7 @@ export const it: Dictionary = {
     lead: "Valuto opportunità come senior developer e collaborazioni mirate su prodotti web, piattaforme editoriali e applicazioni gestionali.",
     details: "Se stai cercando un profilo capace di contribuire tra architettura, delivery e qualità del prodotto, contattami su LinkedIn.",
     linkedin: "Contattami su LinkedIn",
+    github: "Vedi i progetti su GitHub",
     location: "Torino, Italia · Disponibile da remoto o in modalità ibrida",
   },
   footer: {

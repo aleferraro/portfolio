@@ -225,6 +225,7 @@ export const en: Dictionary = {
     lead: "I'm open to senior developer roles and focused collaborations on web products, editorial platforms and management applications.",
     details: "If you're looking for someone who can contribute across architecture, delivery and product quality, reach out on LinkedIn.",
     linkedin: "Contact me on LinkedIn",
+    github: "See my projects on GitHub",
     location: "Turin, Italy · Available remotely or hybrid",
   },
   footer: {

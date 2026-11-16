@@ -89,6 +89,7 @@ export type Dictionary = {
     lead: string;
     details: string;
     linkedin: string;
+    github: string;
     location: string;
   };
   footer: {
