@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alessandroferraro.vercel.app"),
   title: siteTitle,
   description: siteDescription,
   applicationName: "Alessandro Ferraro Portfolio",
@@ -43,6 +44,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
+    url: "/",
     title: siteTitle,
     description: siteDescription,
     type: "website",

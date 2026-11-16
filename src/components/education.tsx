@@ -13,7 +13,7 @@ const education = [
   },
   {
     title: "Laurea Triennale in Amministrazione, Finanza e Controllo",
-    institution: "UniversitÃ  degli Studi di Torino",
+    institution: "Università degli Studi di Torino",
     period: "2011 - 2016",
     description: "Percorso universitario che ha rafforzato approccio analitico, organizzazione e lettura dei processi.",
   },

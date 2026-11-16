@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 import Section from "./section";
 
 const projectsIntro =
-  "Una selezione di prodotti in produzione e progetti personali. Ho privilegiato casi che mostrano il mio contributo tecnico piÃ¹ che una semplice vetrina di stack.";
+  "Una selezione di prodotti in produzione e progetti personali. Ho privilegiato casi che mostrano il mio contributo tecnico più che una semplice vetrina di stack.";
 
 const projects = [
   {
@@ -57,7 +57,7 @@ const projects = [
     contribution: [
       "Ricerca avanzata e performante con Elasticsearch.",
       "Integrazione con il Sistema Tessera Sanitaria e i portali assicurativi (UniSalute, Previmedical).",
-      "Moduli core: magazzino, contabilitÃ , pazienti, fatture e compensi dei medici.",
+      "Moduli core: magazzino, contabilità, pazienti, fatture e compensi dei medici.",
     ],
   },
   {

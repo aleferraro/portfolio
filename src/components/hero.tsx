@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 const heroDescription =
-  "Aiuto team di prodotto e aziende a progettare, sviluppare e far crescere applicazioni web con Laravel, Vue/React, Nuxt e TypeScript, con attenzione ad architettura, performance e qualitÃ  della delivery. Oggi sviluppo le piattaforme editoriali di EDT S.r.l. (Lonely Planet Italia, Il Giornale della Musica).";
+  "Aiuto team di prodotto e aziende a progettare, sviluppare e far crescere applicazioni web con Laravel, Vue/React, Nuxt e TypeScript, con attenzione ad architettura, performance e qualità della delivery. Oggi sviluppo le piattaforme editoriali di EDT S.r.l. (Lonely Planet Italia, Il Giornale della Musica).";
 
 function LinkedinIcon({ size = 20 }: { size?: number }) {
   return (
