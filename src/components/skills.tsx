@@ -6,7 +6,7 @@ import Section from "./section";
 const skillGroups = [
   {
     category: "Back-end & Database",
-    skills: ["PHP", "Laravel", "Filament", "Livewire", "Python", "GraphQL", "REST API", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch"],
+    skills: ["PHP", "Laravel", "Filament", "Livewire", "Node.js", "Python", "GraphQL", "REST API", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch"],
   },
   {
     category: "Front-end",
