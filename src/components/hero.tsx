@@ -58,8 +58,14 @@ export default function Hero() {
             <LinkedinIcon size={18} />
             Contattami su LinkedIn
           </a>
-          <a href="#projects" className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-card-border text-muted hover:border-accent hover:text-foreground transition-colors w-full sm:w-auto">
-            Vedi i progetti
+          <a
+            href="https://github.com/aleferraro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-card-border text-muted hover:border-accent hover:text-foreground transition-colors w-full sm:w-auto"
+          >
+            <GithubIcon size={18} />
+            Vedi i progetti su GitHub
           </a>
         </motion.div>
 
@@ -69,27 +75,6 @@ export default function Hero() {
               {item}
             </span>
           ))}
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="flex items-center justify-center gap-4">
-          <a
-            href="https://www.linkedin.com/in/alessandro-ferraro/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full border border-card-border hover:border-accent hover:text-accent transition-colors"
-            aria-label="LinkedIn"
-          >
-            <LinkedinIcon size={20} />
-          </a>
-          <a
-            href="https://github.com/aleferraro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full border border-card-border hover:border-accent hover:text-accent transition-colors"
-            aria-label="GitHub"
-          >
-            <GithubIcon size={20} />
-          </a>
         </motion.div>
 
         <motion.a
