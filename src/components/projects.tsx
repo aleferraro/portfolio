@@ -14,7 +14,7 @@ const projects = [
     role: "Senior Full Stack Developer",
     image: "/projects/lonely-planet-cover.jpg",
     summary: "Piattaforma editoriale dedicata al mondo dei viaggi con contenuti, approfondimenti e shop collegato al brand Lonely Planet Italia.",
-    tech: ["Laravel", "GraphQL", "Nuxt", "Vue.js", "TypeScript", "PostgreSQL", "Redis"],
+    tech: ["Laravel", "GraphQL", "Node.js", "Nuxt", "Vue.js", "TypeScript", "PostgreSQL", "Redis"],
     surface: "Editoria di viaggio + shop",
     link: "https://www.lonelyplanetitalia.it",
     status: "Gen 2025 - Presente · In evoluzione",

@@ -12,7 +12,7 @@ const experiences = [
     period: "Gen 2025 - Presente",
     location: "Torino - Ibrido",
     description: "Sviluppo full-stack delle testate digitali di EDT (Lonely Planet Italia, Il Giornale della Musica, Guide Marco Polo). Ricostruzione end-to-end di giornaledellamusica.it (Drupal → Laravel) e re-architettura di Lonely Planet Italia verso un'architettura headless con gateway GraphQL e front-end Nuxt SSR.",
-    skills: ["Laravel", "GraphQL", "Nuxt", "Vue.js", "React", "Filament", "Tailwind CSS", "PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    skills: ["Laravel", "GraphQL", "Node.js", "Nuxt", "Vue.js", "React", "Filament", "Tailwind CSS", "PostgreSQL", "MySQL", "MongoDB", "Redis"],
   },
   {
     role: "Full Stack Web Developer",
