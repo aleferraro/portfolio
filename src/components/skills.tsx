@@ -2,31 +2,13 @@
 
 import { motion } from "framer-motion";
 import Section from "./section";
+import type { Dictionary } from "@/i18n/types";
 
-const skillGroups = [
-  {
-    category: "Back-end & Database",
-    skills: ["PHP", "Laravel", "Filament", "Livewire", "Node.js", "Python", "GraphQL", "REST API", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch"],
-  },
-  {
-    category: "Front-end",
-    skills: ["Vue.js", "React", "Next.js", "Nuxt", "TypeScript", "JavaScript", "Tailwind CSS", "SASS/SCSS", "HTML5", "CSS3"],
-  },
-  {
-    category: "DevOps & Tools",
-    skills: ["Docker", "Git", "GitHub Actions", "Nginx", "Bun", "Vite", "Composer", "Postman"],
-  },
-  {
-    category: "Metodologie",
-    skills: ["Agile / Scrum", "Code review", "SOLID", "Design pattern", "Problem Solving"],
-  },
-];
-
-export default function Skills() {
+export default function Skills({ t }: { t: Dictionary["skills"] }) {
   return (
-    <Section id="skills" title="Competenze">
+    <Section id="skills" title={t.title}>
       <div className="grid md:grid-cols-2 gap-8">
-        {skillGroups.map((group, i) => (
+        {t.groups.map((group, i) => (
           <motion.div
             key={group.category}
             initial={{ opacity: 0, y: 20 }}

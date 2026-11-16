@@ -1,14 +1,14 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
+import { getDictionary, type Locale } from "@/i18n";
 
-export const alt = "Alessandro Ferraro — Senior Full Stack Developer";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+const size = { width: 1200, height: 630 };
 
 const accent = "#3b82f6";
 
-export default async function OpengraphImage() {
+export async function renderOgImage(locale: Locale) {
+  const { og } = getDictionary(locale);
   const [geistRegular, geistBold] = await Promise.all([
     readFile(join(process.cwd(), "assets/Geist-Regular.ttf")),
     readFile(join(process.cwd(), "assets/Geist-Bold.ttf")),
@@ -34,9 +34,9 @@ export default async function OpengraphImage() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 28, color: accent, marginBottom: 16 }}>Senior Full Stack Developer · Torino / Da remoto</div>
+          <div style={{ fontSize: 28, color: accent, marginBottom: 16 }}>{og.eyebrow}</div>
           <div style={{ fontSize: 88, fontWeight: 700, letterSpacing: -2, marginBottom: 24 }}>Alessandro Ferraro</div>
-          <div style={{ fontSize: 31, color: "#a3a3a3" }}>Costruisco piattaforme web solide, scalabili e facili da far evolvere.</div>
+          <div style={{ fontSize: 31, color: "#a3a3a3" }}>{og.tagline}</div>
         </div>
 
         <div style={{ display: "flex", gap: 16 }}>

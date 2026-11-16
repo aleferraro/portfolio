@@ -3,37 +3,17 @@
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 import Section from "./section";
+import type { Dictionary } from "@/i18n/types";
 
-const experiences = [
-  {
-    role: "Senior Full Stack Developer",
-    company: "EDT S.r.l.",
-    type: "Full-time",
-    period: "Gen 2025 - Presente",
-    location: "Torino - Ibrido",
-    description: "Sviluppo full-stack delle testate digitali di EDT (Lonely Planet Italia, Il Giornale della Musica, Guide Marco Polo). Ricostruzione end-to-end di giornaledellamusica.it (Drupal → Laravel) e re-architettura di Lonely Planet Italia verso un'architettura headless con gateway GraphQL e front-end Nuxt SSR.",
-    skills: ["Laravel", "GraphQL", "Node.js", "Nuxt", "Vue.js", "React", "Filament", "Tailwind CSS", "PostgreSQL", "MySQL", "MongoDB", "Redis"],
-  },
-  {
-    role: "Full Stack Web Developer",
-    company: "Primo Group S.p.A.",
-    type: "Full-time",
-    period: "Apr 2021 - Dic 2024",
-    location: "Torino",
-    description: "Sviluppo full-stack di PrimoUp, il CRM gestionale della rete di cliniche dentistiche: moduli core, ricerca Elasticsearch e integrazioni con il Sistema Tessera Sanitaria e i principali portali assicurativi sanitari.",
-    skills: ["Laravel", "Vue.js", "Elasticsearch", "MySQL", "PHP", "JavaScript"],
-  },
-];
-
-export default function Experience() {
+export default function Experience({ t }: { t: Dictionary["experience"] }) {
   return (
-    <Section id="experience" title="Esperienza">
+    <Section id="experience" title={t.title}>
       <div className="relative">
         {/* Timeline line */}
         <div className="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-card-border" />
 
         <div className="space-y-12">
-          {experiences.map((exp, i) => (
+          {t.items.map((exp, i) => (
             <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="relative pl-12 md:pl-20">
               {/* Timeline dot */}
               <div className="absolute left-2.5 md:left-6.5 top-1 w-3 h-3 rounded-full bg-accent border-2 border-background" />

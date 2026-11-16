@@ -22,8 +22,11 @@ Apri http://localhost:3000 per visualizzare il sito.
 
 ## Struttura
 
-- `src/app`: layout globale, pagina iniziale e stili globali.
-- `src/components`: sezioni del portfolio e componenti di presentazione.
+- `src/app`: route e stili globali. Il sito ha due layout principali tramite route group: `(it)` serve la versione italiana su `/`, `(en)` quella inglese su `/en`. Ognuno ha la propria immagine Open Graph.
+- `src/i18n`: tutti i testi del sito. `it.ts` e `en.ts` contengono i contenuti (stessa struttura, tipizzata in `types.ts`); `index.ts` espone il dizionario e i metadata (canonical, hreflang, Open Graph) per lingua. Per modificare un testo si interviene qui, in entrambe le lingue.
+- `src/components`: sezioni del portfolio; ricevono i testi come props. `site-shell.tsx` è il layout HTML comune, `home.tsx` compone la pagina.
+- `src/lib/og-image.tsx`: generazione dell'immagine di anteprima social, localizzata.
+- `assets`: font usati per generare l'immagine di anteprima.
 - `public`: asset statici pubblici.
 
 ## Obiettivo del sito

@@ -3,12 +3,7 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import Section from "./section";
-
-const contactLead =
-  "Valuto opportunità come senior developer e collaborazioni mirate su prodotti web, piattaforme editoriali e applicazioni gestionali.";
-
-const contactDetails =
-  "Se stai cercando un profilo capace di contribuire tra architettura, delivery e qualità del prodotto, contattami su LinkedIn.";
+import type { Dictionary } from "@/i18n/types";
 
 function LinkedinIcon({ size = 18 }: { size?: number }) {
   return (
@@ -18,13 +13,13 @@ function LinkedinIcon({ size = 18 }: { size?: number }) {
   );
 }
 
-export default function Contact() {
+export default function Contact({ t }: { t: Dictionary["contact"] }) {
   return (
-    <Section id="contact" title="Contatti">
+    <Section id="contact" title={t.title}>
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-2xl mx-auto text-center">
-        <p className="text-muted text-lg mb-4 leading-relaxed">{contactLead}</p>
+        <p className="text-muted text-lg mb-4 leading-relaxed">{t.lead}</p>
 
-        <p className="text-muted mb-8 leading-relaxed">{contactDetails}</p>
+        <p className="text-muted mb-8 leading-relaxed">{t.details}</p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <a
@@ -34,7 +29,7 @@ export default function Contact() {
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white font-medium hover:bg-accent-hover transition-colors"
           >
             <LinkedinIcon size={18} />
-            Contattami su LinkedIn
+            {t.linkedin}
           </a>
           <a
             href="https://github.com/aleferraro"
@@ -48,7 +43,7 @@ export default function Contact() {
 
         <p className="flex items-center justify-center gap-2 text-sm text-muted">
           <MapPin size={14} />
-          Torino, Italia · Disponibile da remoto o in modalità ibrida
+          {t.location}
         </p>
       </motion.div>
     </Section>
