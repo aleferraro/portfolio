@@ -20,7 +20,7 @@ const experiences = [
     type: "Full-time",
     period: "Apr 2021 - Dic 2024",
     location: "Torino",
-    description: "Sviluppo full-stack di PrimoUp, CRM gestionale usato da circa 10-15.000 utenti per oltre 1 milione di pazienti: moduli core, ricerca Elasticsearch e integrazioni con il Sistema Tessera Sanitaria e i principali portali assicurativi sanitari.",
+    description: "Sviluppo full-stack di PrimoUp, il CRM gestionale della rete di cliniche dentistiche: moduli core, ricerca Elasticsearch e integrazioni con il Sistema Tessera Sanitaria e i principali portali assicurativi sanitari.",
     skills: ["Laravel", "Vue.js", "Elasticsearch", "MySQL", "PHP", "JavaScript"],
   },
 ];

@@ -19,7 +19,7 @@ const projects = [
     link: "https://www.lonelyplanetitalia.it",
     status: "Gen 2025 - Presente · In evoluzione",
     company: "EDT Srl",
-    impact: "Portale travel con oltre 300.000 visualizzazioni/mese.",
+    facts: [{ label: "Traffico", value: "~580.000", unit: "visualizzazioni/mese" }],
     contribution: [
       "Re-architettura da monolite Laravel 5 a 3 servizi disaccoppiati.",
       "Backend headless in Laravel 13 (domain-driven) + gateway GraphQL (Bun/Apollo) con cache Redis.",
@@ -36,9 +36,9 @@ const projects = [
     link: "https://www.giornaledellamusica.it",
     status: "Gen 2025 - Presente",
     company: "EDT Srl",
-    impact: "Migrazione di oltre 13.000 articoli (Drupal → Laravel), ~60.000 visualizzazioni/mese.",
+    facts: [{ label: "Traffico", value: "~70.000", unit: "visualizzazioni/mese" }],
     contribution: [
-      "Ricostruzione end-to-end del sito con migrazione da Drupal a Laravel.",
+      "Ricostruzione end-to-end del sito con migrazione di oltre 13.000 articoli da Drupal a Laravel.",
       "Area amministrativa in Filament per contenuti e dati editoriali.",
       "Dashboard di analytics sui dati Plausible per il management.",
     ],
@@ -53,7 +53,11 @@ const projects = [
     link: "https://www.centridentisticiprimo.it",
     status: "Apr 2021 - Dic 2024",
     company: "Primo Group S.p.A.",
-    impact: "Usato da ~10-15.000 utenti per oltre 1 milione di pazienti, in 170+ cliniche.",
+    facts: [
+      { label: "Cliniche", value: "170+" },
+      { label: "Utenti", value: "10-15.000" },
+      { label: "Pazienti", value: "1M+" },
+    ],
     contribution: [
       "Ricerca avanzata e performante con Elasticsearch.",
       "Integrazione con il Sistema Tessera Sanitaria e i portali assicurativi (UniSalute, Previmedical).",
@@ -70,7 +74,6 @@ const projects = [
     link: "https://github.com/aleferraro/binance-bot",
     status: "Progetto personale · Open source (MIT)",
     company: "Progetto personale",
-    impact: "~5.000 righe di Python, architettura modulare e validazione walk-forward / K-fold delle strategie.",
     contribution: [
       "Motore di backtest fedele al comportamento live, con sweep parametri, walk-forward e K-fold.",
       "Strategia funding-carry delta-neutral (long spot + short perp) per incassare il funding rate.",
@@ -124,10 +127,22 @@ export default function Projects() {
 
             <p className="text-muted text-sm leading-relaxed mb-4">{project.summary}</p>
 
-            <div className="mb-4 rounded-lg border border-accent/20 bg-accent/5 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-2">Segnale di impatto</p>
-              <p className="text-sm text-foreground leading-relaxed">{project.impact}</p>
-            </div>
+            {project.facts && (
+              <dl
+                className="mb-4 grid gap-px overflow-hidden rounded-lg border border-accent/20 bg-accent/20"
+                style={{ gridTemplateColumns: `repeat(${project.facts.length}, minmax(0, 1fr))` }}
+              >
+                {project.facts.map((fact) => (
+                  <div key={fact.label} className="bg-card">
+                    <div className="h-full bg-accent/5 p-3">
+                      <dt className="text-[10px] uppercase tracking-[0.2em] text-accent">{fact.label}</dt>
+                      <dd className="mt-1 text-xl font-semibold text-foreground">{fact.value}</dd>
+                      {"unit" in fact && <dd className="text-xs text-muted">{fact.unit}</dd>}
+                    </div>
+                  </div>
+                ))}
+              </dl>
+            )}
 
             <div className="mb-6">
               <p className="text-xs uppercase tracking-[0.2em] text-muted mb-3">Mio contributo</p>

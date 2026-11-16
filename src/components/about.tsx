@@ -12,28 +12,11 @@ const aboutParagraphs = [
 export default function About() {
   return (
     <Section id="about" title="Chi sono">
-      <div className="grid md:grid-cols-3 gap-12">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="md:col-span-2 space-y-4 text-muted leading-relaxed">
-          {aboutParagraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="space-y-4">
-          <div className="p-4 rounded-xl bg-card border border-card-border">
-            <p className="text-3xl font-bold text-accent">5+</p>
-            <p className="text-sm text-muted">anni di esperienza su prodotti digitali</p>
-          </div>
-          <div className="p-4 rounded-xl bg-card border border-card-border">
-            <p className="text-3xl font-bold text-accent">1M+</p>
-            <p className="text-sm text-muted">pazienti gestiti dal CRM PrimoUp</p>
-          </div>
-          <div className="p-4 rounded-xl bg-card border border-card-border">
-            <p className="text-3xl font-bold text-accent">End-to-end</p>
-            <p className="text-sm text-muted">dal back-end alla UX tecnica</p>
-          </div>
-        </motion.div>
-      </div>
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-3xl space-y-4 text-muted leading-relaxed">
+        {aboutParagraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </motion.div>
     </Section>
   );
 }
